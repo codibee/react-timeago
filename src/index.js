@@ -169,7 +169,7 @@ export default class TimeAgo extends Component<Props> {
 
     const [value, unit] =
       seconds < MINUTE
-        ? [Math.round(seconds), 'second']
+        ? ['', 'A few second']
         : seconds < HOUR
           ? [Math.round(seconds / MINUTE), 'minute']
           : seconds < DAY
